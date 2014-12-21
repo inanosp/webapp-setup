@@ -1,7 +1,7 @@
 webapp-setup
 ============
 
-Basic setup for any website build (Sass and bootstrap).
+Basic setup for simple to advanced website build (Sass and bootstrap).
 
 
 <h2>Getting Started</h2>
