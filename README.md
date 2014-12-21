@@ -14,7 +14,7 @@ This is basic webapp setup repo. You just need to download this to your machine 
 
 <li><h3>Installing Bower:</h3></li>
 
-Bower can be installed using<a href="https://npmjs.org/" target="_blank">npm</a>, the Node package manager. If you don’t already have npm installed, head over to the<a href="http://nodejs.org/" target="_blank">Node.js website</a> and download the relevant copy of Node.js for your system. The npm program is included with the install of Node.js.
+Bower can be installed using <a href="https://npmjs.org/" target="_blank">npm</a>, the Node package manager. If you don’t already have npm installed, head over to the <a href="http://nodejs.org/" target="_blank">Node.js website</a> and download the relevant copy of Node.js for your system. The npm program is included with the install of Node.js.
 
 Once you have npm installed, open up Terminal (or Command Prompt) and enter the following command:<br>
 
