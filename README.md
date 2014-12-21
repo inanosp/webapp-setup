@@ -22,7 +22,7 @@ Once you have npm installed, open up Terminal (or Command Prompt) and enter the 
 
 This will install Bower globally on your system.
 
-<li><h2>Installing Grunt CLI</h2></li>
+<li><h2>Installing Grunt CLI:</h2></li>
 
 Now install Grunt's command line interface (CLI) globally. You may need to use sudo (for OSX, *nix, BSD etc) or run your command shell as Administrator (for Windows) to do this.
 
