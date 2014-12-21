@@ -9,7 +9,7 @@ module.exports = function (grunt) {
                     'dist/js/main.min.js':['scripts/*.js','!scripts/*.min.js']
                 },
                 options: {
-                  banner: '/* Final minified js file */'
+                  	banner: '/* Final minified js file */'
                 },
             }
         },
@@ -50,7 +50,7 @@ module.exports = function (grunt) {
                     'dist/css/main.min.css':['css/*.css','!css/*.min.css']
                 },
                 options: {
-                  banner: '/* Final minified css file */'
+                 	banner: '/* Final minified css file */'
                 },
             },
             
