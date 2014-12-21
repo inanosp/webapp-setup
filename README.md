@@ -12,8 +12,8 @@ This is basic webapp setup repo. You just need to download this to your machine 
 <pre>git clone https://github.com/inanosp/webapp-setup.git</pre>
 </ul>
 
-<br/>
 <li><h3>Installing Bower:</h3></li>
+============
 
 Bower can be installed using <a href="https://npmjs.org/" target="_blank">npm</a>, the Node package manager. If you don’t already have npm installed, head over to the <a href="http://nodejs.org/" target="_blank">Node.js website</a> and download the relevant copy of Node.js for your system. The npm program is included with the install of Node.js.
 
@@ -23,16 +23,16 @@ Once you have npm installed, open up Terminal (or Command Prompt) and enter the 
 
 This will install Bower globally on your system.
 
-<br/>
 <li><h3>Installing Grunt CLI</h3></li>
+============
 Now install Grunt's command line interface (CLI) globally. You may need to use sudo (for OSX, *nix, BSD etc) or run your command shell as Administrator (for Windows) to do this.
 
 <pre>npm install -g grunt-cli</pre>
 
 This will put the grunt command in your system path, allowing it to be run from any directory.
 
-<br/>
 <h3>Install dependencies/modules Using bower and npm</h3>
+============
 Now that you have Bower installed, we can start looking at the commands that are used to manage packages.
 All dependencies/modules are predefined in <strong>Gruntfile.js</strong>.
 
