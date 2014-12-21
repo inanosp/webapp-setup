@@ -6,12 +6,24 @@ module.exports = function (grunt) {
         uglify: {
             build: {
                 files: {
-                    
-                }
+                    'dist/js/main.min.js':['scripts/*.js','!scripts/*.min.js']
+                },
+                options: {
+                  banner: '/* Final minified js file */'
+                },
             }
         },
         compass: {
             dev: {
+                options: {
+                    sassDir: 'sass',
+                    cssDir: 'css',
+                    imagesDir: 'images',
+                    environment: 'development',
+                    httpGeneratedImagesPath: 'images'
+                }
+            },
+            bootstrap: {
                 options: {
                     sassDir: 'sass',
                     cssDir: 'css',
@@ -26,10 +38,33 @@ module.exports = function (grunt) {
                     cssDir: 'css',
                     imagesDir: 'images',
                     environment: 'production',
-                    httpGeneratedImagesPath: 'images'
+                    httpGeneratedImagesPath: 'images',
+                    outputStyle: 'compressed'
                 }
             }
         },
+
+        cssmin: {
+            combine: {
+                files: {
+                    'dist/css/main.min.css':['css/*.css','!css/*.min.css']
+                },
+                options: {
+                  banner: '/* Final minified css file */'
+                },
+            },
+            
+            /*minified: {
+                files: [{
+                  expand: true,
+                  cwd: 'dist/css/',
+                  src: ['*.css', '!*.min.css'],
+                  dest: 'dist/css/',
+                  ext: '.min.css'
+                }]
+            }*/
+        },
+
 
         watch: {
             jshint: {
@@ -82,6 +117,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-notify');
 
@@ -89,5 +125,5 @@ module.exports = function (grunt) {
    // grunt.registerTask('default', ['compass:dev']);
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('setup', ['clean:precommit','shell:precommit','clean:pull','shell:pull']);
-    grunt.registerTask('live', ['jshint', 'uglify', 'compass:live']);
+    grunt.registerTask('live', ['jshint', 'uglify', 'compass:live', 'cssmin']);
 };
