@@ -22,10 +22,17 @@ Once you have npm installed, open up Terminal (or Command Prompt) and enter the 
 
 This will install Bower globally on your system.
 
-Now that you have Bower installed, we can start looking at the commands that are used to manage packages.
+<li><h3>Installing Grunt CLI</h3></li>
+you'll want to install Grunt's command line interface (CLI) globally. You may need to use sudo (for OSX, *nix, BSD etc) or run your command shell as Administrator (for Windows) to do this.
+
+<pre>npm install -g grunt-cli</pre>
+
+This will put the grunt command in your system path, allowing it to be run from any directory.
 
 
 <h3>Install dependencies/modules Using bower and npm</h3>
+Now that you have Bower installed, we can start looking at the commands that are used to manage packages.
+All dependencies/modules are predefined in <strong>Gruntfile.js</strong>.
 
 <pre>bower install && npm install</pre>
 
